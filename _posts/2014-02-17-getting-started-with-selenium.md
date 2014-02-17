@@ -26,7 +26,7 @@ This framework provides a few effective modern web testing techniques including 
 
 The framework was designed to be incredibly simple and intuitive:
 
-{{ gist 8078879 }}
+<script src="https://gist.github.com/ddavison/8078879.js"></script>
 
 You can see that this test is insanely simple.
 
@@ -43,7 +43,7 @@ This test is very easy to follow, and intuitive.
 
 How about this one:
 
-{{ gist 7234204 }}
+<script src="https://gist.github.com/ddavison/7234204.js"></script>
 
 This is a simple test to automate [flipkart](http://flipkart.com)
 
