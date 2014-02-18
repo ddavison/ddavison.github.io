@@ -1,10 +1,9 @@
 ---
 layout: post
 title: "Getting started with Selenium"
+description: "Learn how to get started using Selenium using a proven framework."
 cover: cover.jpg
-description: ""
-category: 
-tags: [selenium]
+tags: [selenium, getting, started, getting started]
 ---
 
 As a regular user on [StackOverflow]({{site.links.stackoverflow}}) and one of the [top answerers for Selenium](http://stackoverflow.com/tags/selenium/topusers), one of the most frequent issues I notice on the questions, is that people do not know how to get started with using Selenium.

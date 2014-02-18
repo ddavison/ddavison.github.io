@@ -95,6 +95,7 @@ task :page do
     post.puts "layout: page"
     post.puts "title: \"#{title}\""
     post.puts 'description: ""'
+    post.puts 'tags: []'
     post.puts "---"
     post.puts ""
     post.puts "Content here."

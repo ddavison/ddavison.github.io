@@ -6,3 +6,9 @@ links:
   github: https://github.com/ddavison
   twitter: http://twitter.com/sircapsalot
   stackoverflow: http://stackoverflow.com/users/1695163/sircapsalot
+
+# Meta information
+title: Daniel's Selenium Blog
+description: Learn about selenium, get some insight from a professional.
+
+keywords: [daniel, davison, webdriver, rc, tutorial, selenium, selenium 2, selenium 1, blog]

@@ -1,0 +1,30 @@
+<body>
+  <div class="site">
+    <div class="sidebar" id="sidebar">
+      <div class="header">
+        <h1 class="title"><a href="/"><img id="logo" src="/images/logo.png"></a></h1>
+        <span class="tagline">A Selenium professional's insight...</span>
+      </div>
+      <div class="posts">
+        <ul class="posts-list">
+          {% for post in site.posts %}
+          <li class="post-link">
+            <a class="post-title" href="{{ post.url }}">
+              <span class="post-date">{{ post.date | date_to_string }}</span>
+              {{ assign seo_title = post.title }}
+              {{ post.title }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="footer">
+        <address id="copyright-info">Daniel Davison &copy; {{ site.time | date: '%Y' }}</address>
+            <span id="footer-links">
+              <a href="{{ site.links.github }}" class="footer-link">GitHub</a> <span class="separator">&bull;</span>
+              <a href="{{ site.links.stackoverflow }}" class="footer-link">StackOverflow</a> <span
+              class="separator">&bull;</span>
+              <a href="{{ site.links.twitter }}" class="footer-link">Twitter</a>
+            </span>
+      </div>
+    </div>
