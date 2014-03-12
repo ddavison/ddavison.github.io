@@ -138,13 +138,13 @@ namespace :theme do
       puts "Generating '#{theme_name}' layout: #{File.basename(filename)}"
 
       open(File.join(CONFIG['layouts'], File.basename(filename)), 'w') do |page|
-        if File.basename(filename, ".html").downcase == "default"
+        if File.basename(filename, ".html").downcase == "blog"
           page.puts "---"
           page.puts File.read(settings_file) if File.exist?(settings_file)
           page.puts "---"
         else
           page.puts "---"
-          page.puts "layout: default"
+          page.puts "layout: blog"
           page.puts "---"
         end
         page.puts "{% include JB/setup %}"
