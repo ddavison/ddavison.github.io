@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Effective CSS Selectors"
+comments: true
 description: "Formulating effective CSS selectors is crutial in your journey as a developer, or as an automator."
 cover: css.jpg
 category: css

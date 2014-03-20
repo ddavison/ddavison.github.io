@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Getting started with Selenium"
+comments: true
 description: "Learn how to get started using Selenium using a proven framework."
 cover: cover.jpg
 tags: [selenium, getting, started, getting started]
