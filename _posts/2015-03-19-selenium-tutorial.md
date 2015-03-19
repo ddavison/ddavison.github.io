@@ -7,11 +7,15 @@ category:
 tags: [selenium, tutorial]
 ---
 
-If you are interested in learning Selenium WebDriver, head on over to 
 
-> https://www.airpair.com/selenium/posts/selenium-tutorial-with-java
+Test Automation using Selenium has been my passion for several years now, and I feel that Selenium deserves your attention if you are looking for a test automation solution for websites.  I've created this tutorial on my own time because I love helping people, and I really wanted to share an easy
+to follow tutorial and get you started!
 
-Test Automation using Selenium has been my passion for about 4 years now, and I feel that it deserves a lot of attention.  I've created this tutorial
-on my own time because I feel that Selenium deserves attention, and that you deserve a nice easy-to-follow tutorial.
+If you are interested in learning Selenium WebDriver, head on over to
 
-Please let me know what you think!
+> [https://www.airpair.com/selenium/posts/selenium-tutorial-with-java](https://www.airpair.com/selenium/posts/selenium-tutorial-with-java)
+
+And please let me know what you think!
+
+
+All the best!
