@@ -1,9 +1,18 @@
 <html>
 <head>
   <title>Validate Visibility</title>
+  <script type="application/javascript">
+  var doit = function() {
+    setTimeout(function() {
+      document.getElementById("invisible").style.display = "block";
+      clearTimeout(this);
+    }, 700);
+  };
+
+  </script>
 </head>
 <body>
-  <a id="visible" href="#">This link is showing</a>
-  <a id="invisible" href="#" style="display: none;">This link is hidden</a>
+  <a id="visible" href="#" onclick="doit()">This link is showing</a>
+  <a id="invisible" href="#" style="display: none;">This link was hidden</a>
 </body>
 </html>
