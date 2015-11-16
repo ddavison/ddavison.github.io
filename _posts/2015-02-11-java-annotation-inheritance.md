@@ -15,7 +15,7 @@ I was using reflection to detect the annotation, but it was returning false!  He
 
 ## Answer is: `java.lang.Inherited`
 
-```
+```java
 public class Main {
     public static void main(String ... args) {
         A a = new A();
@@ -36,7 +36,7 @@ class B extends A {}
 
 ### Console Output:
 
-```
+```java
 true
 true
 ```
@@ -45,7 +45,7 @@ If you take out `@Inherited` the result would be:
 
 ### Console Output:
 
-```
+```java
 true
 false
 ```
