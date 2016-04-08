@@ -60,10 +60,31 @@ Which will accept said POST requests, and run any SoapUI tests fired at it.
 After running the SoapUI tests, there are different HTTP status codes
 associated with the run.
 
-| Code | Message | Description |
-| -----|---------|------------ |
-| **200**  | OK      | All SoapUI Tests ran successfully and passed |
-| **550**  | Test Failure(s) | You have failures in the SoapUI Test suite / cases. You can check the content of the request to determine what failed |
-| **551**  | No Suite | You did not specify the `suite` POST parameter with the name of the suite you wanted to run |
-| **552**  | No SoapUI Project | You did not specify the `project` POST parameter with the proper SoapUI XML data.  *Remember*: This needs to be the actual file itself sent as multipart/form-data. E.g: `curl -F "project=@the-soapui-project.xml"` |
-| **500**  | Internal Server Error | An exception occured while running the SoapUI Tests |
+<table>
+<tr>
+  <th>Code</th>
+  <th>Message</th>
+  <th>Description</th>
+</tr>
+<tr>
+  <td>200</td>
+  <td>OK</td>
+  <td>All SoapUI Tests ran successfully and passed</td>
+</tr><tr>
+  <td>550</td>
+  <td>Test Failure(s)</td>
+  <td>You have failures in the SoapUI Test suite / cases. You can check the content of the request to determine what failed</td>
+</tr><tr>
+  <td>551</td>
+  <td>No Suite</td>
+  <td>You did not specify the `suite` POST parameter with the name of the suite you wanted to run </td>
+</tr><tr>
+  <td>552</td>
+  <td>No SoapUI Project</td>
+  <td>You did not specify the 'project' POST parameter with the proper SoapUI XML data. <em>Remember</em>: This needs to be the actual file itself sent as multipart/form-data. E.g: <pre>curl -F "project=@the-soapui-project.xml" ...</pre></td>
+</tr><tr>
+  <td>500</td>
+  <td>Internal Server Error</td>
+  <td>An exception occured while running the SoapUI Tests</td>
+</tr>
+</table>
