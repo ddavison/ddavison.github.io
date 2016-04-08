@@ -19,7 +19,7 @@ container.
 > [https://github.com/ddavison/docker-soapui](https://github.com/ddavison/docker-soapui)
 
 ### What does it do?
-> By containerizing SoapUI and its runner, this allows you to have a portable  
+> By containerizing SoapUI and its runner, this allows you to have a portable
 SoapUI installation that lets you run your SoapUI projects anywhere!
 
 Included in this docker container, is the following:
@@ -51,9 +51,19 @@ Which will accept said POST requests, and run any SoapUI tests fired at it.
 2. `docker run -it -p 3000:3000 ddavison/soapui`
 3. Curl the service by sending a SoapUI project xml file
 
-  > ```
-  curl -F "url=http://example.com/AUT" \
+```
+  curl -F "project=@/path/to/soapui-project.xml" \
     -F "suite=YourSuite" \
-    -F "data=@/path/to/your/soapui-project.xml" \
-    http://0.0.0.0:3000
-  ```
+    http://localhost:3000
+```
+
+After running the SoapUI tests, there are different HTTP status codes
+associated with the run.
+
+| Code | Message | Description |
+| -----|---------|------------ |
+| **200**  | OK      | All SoapUI Tests ran successfully and passed |
+| **550**  | Test Failure(s) | You have failures in the SoapUI Test suite / cases. You can check the content of the request to determine what failed |
+| **551**  | No Suite | You did not specify the `suite` POST parameter with the name of the suite you wanted to run |
+| **552**  | No SoapUI Project | You did not specify the `project` POST parameter with the proper SoapUI XML data.  *Remember*: This needs to be the actual file itself sent as multipart/form-data. E.g: `curl -F "project=@the-soapui-project.xml"` |
+| **500**  | Internal Server Error | An exception occured while running the SoapUI Tests |
